@@ -1,0 +1,124 @@
+27-10-2025 14:30:19 - services.readers.mail_reader - INFO - From=10.1.255.34@apn4prevent.es 
+27-10-2025 14:30:19 - services.readers.mail_reader - INFO - El correo de 10.1.255.34@apn4prevent.es está en la lista negra, se omite su procesamiento.
+27-10-2025 14:30:19 - services.readers.mail_reader - DEBUG - La carpeta INBOX/blacklist_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:19 - services.readers.mail_reader - INFO - Correo copiado a INBOX/blacklist_2025-10-22
+27-10-2025 14:30:19 - services.readers.mail_reader - INFO - From=10.1.255.34@apn4prevent.es 
+27-10-2025 14:30:19 - services.readers.mail_reader - INFO - El correo de 10.1.255.34@apn4prevent.es está en la lista negra, se omite su procesamiento.
+27-10-2025 14:30:19 - services.readers.mail_reader - DEBUG - La carpeta INBOX/blacklist_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:19 - services.readers.mail_reader - INFO - Correo copiado a INBOX/blacklist_2025-10-22
+27-10-2025 14:30:20 - services.readers.mail_reader - INFO - From=10.1.255.34@apn4prevent.es 
+27-10-2025 14:30:20 - services.readers.mail_reader - INFO - El correo de 10.1.255.34@apn4prevent.es está en la lista negra, se omite su procesamiento.
+27-10-2025 14:30:20 - services.readers.mail_reader - DEBUG - La carpeta INBOX/blacklist_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:20 - services.readers.mail_reader - INFO - Correo copiado a INBOX/blacklist_2025-10-22
+27-10-2025 14:30:20 - services.readers.mail_reader - INFO - From=10.1.255.34@apn4prevent.es 
+27-10-2025 14:30:20 - services.readers.mail_reader - INFO - El correo de 10.1.255.34@apn4prevent.es está en la lista negra, se omite su procesamiento.
+27-10-2025 14:30:20 - services.readers.mail_reader - DEBUG - La carpeta INBOX/blacklist_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:20 - services.readers.mail_reader - INFO - Correo copiado a INBOX/blacklist_2025-10-22
+27-10-2025 14:30:20 - services.readers.mail_reader - INFO - From=riosegura30@backup.es 
+27-10-2025 14:30:20 - services.readers.mail_reader - DEBUG - La carpeta INBOX/Procesados_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:20 - services.readers.mail_reader - INFO - Correo copiado a INBOX/Procesados_2025-10-22
+27-10-2025 14:30:20 - services.readers.mail_reader - INFO - From=10.1.252.23@apnprevent.es 
+27-10-2025 14:30:20 - services.readers.mail_reader - DEBUG - La carpeta INBOX/Procesados_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:20 - services.readers.mail_reader - INFO - Correo copiado a INBOX/Procesados_2025-10-22
+27-10-2025 14:30:21 - services.readers.mail_reader - INFO - From=10.1.255.34@apn4prevent.es 
+27-10-2025 14:30:21 - services.readers.mail_reader - INFO - El correo de 10.1.255.34@apn4prevent.es está en la lista negra, se omite su procesamiento.
+27-10-2025 14:30:21 - services.readers.mail_reader - DEBUG - La carpeta INBOX/blacklist_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:21 - services.readers.mail_reader - INFO - Correo copiado a INBOX/blacklist_2025-10-22
+27-10-2025 14:30:21 - services.readers.mail_reader - INFO - From=10.1.255.34@apn4prevent.es 
+27-10-2025 14:30:21 - services.readers.mail_reader - INFO - El correo de 10.1.255.34@apn4prevent.es está en la lista negra, se omite su procesamiento.
+27-10-2025 14:30:21 - services.readers.mail_reader - DEBUG - La carpeta INBOX/blacklist_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:21 - services.readers.mail_reader - INFO - Correo copiado a INBOX/blacklist_2025-10-22
+27-10-2025 14:30:21 - services.readers.mail_reader - INFO - From=10.1.255.34@apn4prevent.es 
+27-10-2025 14:30:21 - services.readers.mail_reader - INFO - El correo de 10.1.255.34@apn4prevent.es está en la lista negra, se omite su procesamiento.
+27-10-2025 14:30:21 - services.readers.mail_reader - DEBUG - La carpeta INBOX/blacklist_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:21 - services.readers.mail_reader - INFO - Correo copiado a INBOX/blacklist_2025-10-22
+27-10-2025 14:30:21 - services.readers.mail_reader - INFO - From=10.2.0.207@apnprevent20.es 
+27-10-2025 14:30:21 - services.readers.mail_reader - DEBUG - La carpeta INBOX/Procesados_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:21 - services.readers.mail_reader - INFO - Correo copiado a INBOX/Procesados_2025-10-22
+27-10-2025 14:30:21 - services.readers.mail_reader - INFO - From=10.1.255.34@apn4prevent.es 
+27-10-2025 14:30:21 - services.readers.mail_reader - INFO - El correo de 10.1.255.34@apn4prevent.es está en la lista negra, se omite su procesamiento.
+27-10-2025 14:30:22 - services.readers.mail_reader - DEBUG - La carpeta INBOX/blacklist_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:22 - services.readers.mail_reader - INFO - Correo copiado a INBOX/blacklist_2025-10-22
+27-10-2025 14:30:22 - services.readers.mail_reader - INFO - From=10.1.255.34@apn4prevent.es 
+27-10-2025 14:30:22 - services.readers.mail_reader - INFO - El correo de 10.1.255.34@apn4prevent.es está en la lista negra, se omite su procesamiento.
+27-10-2025 14:30:22 - services.readers.mail_reader - DEBUG - La carpeta INBOX/blacklist_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:22 - services.readers.mail_reader - INFO - Correo copiado a INBOX/blacklist_2025-10-22
+27-10-2025 14:30:22 - services.readers.mail_reader - INFO - From=10.2.0.232@apnprevent20.es 
+27-10-2025 14:30:22 - services.readers.mail_reader - DEBUG - La carpeta INBOX/Procesados_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:22 - services.readers.mail_reader - INFO - Correo copiado a INBOX/Procesados_2025-10-22
+27-10-2025 14:30:22 - services.readers.mail_reader - INFO - From=10.2.0.207@apnprevent20.es 
+27-10-2025 14:30:22 - services.readers.mail_reader - DEBUG - La carpeta INBOX/Procesados_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:22 - services.readers.mail_reader - INFO - Correo copiado a INBOX/Procesados_2025-10-22
+27-10-2025 14:30:22 - services.readers.mail_reader - INFO - From=10.2.0.232@apnprevent20.es 
+27-10-2025 14:30:23 - services.readers.mail_reader - DEBUG - La carpeta INBOX/Procesados_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:23 - services.readers.mail_reader - INFO - Correo copiado a INBOX/Procesados_2025-10-22
+27-10-2025 14:30:23 - services.readers.mail_reader - INFO - From=10.1.252.23@apnprevent.es 
+27-10-2025 14:30:23 - services.readers.mail_reader - DEBUG - La carpeta INBOX/Procesados_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:23 - services.readers.mail_reader - INFO - Correo copiado a INBOX/Procesados_2025-10-22
+27-10-2025 14:30:23 - services.readers.mail_reader - INFO - From=10.2.0.20@apnprevent20.es 
+27-10-2025 14:30:23 - services.readers.mail_reader - DEBUG - La carpeta INBOX/Procesados_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:23 - services.readers.mail_reader - INFO - Correo copiado a INBOX/Procesados_2025-10-22
+27-10-2025 14:30:24 - services.readers.mail_reader - INFO - From=10.1.255.34@apn4prevent.es 
+27-10-2025 14:30:24 - services.readers.mail_reader - INFO - El correo de 10.1.255.34@apn4prevent.es está en la lista negra, se omite su procesamiento.
+27-10-2025 14:30:24 - services.readers.mail_reader - DEBUG - La carpeta INBOX/blacklist_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:24 - services.readers.mail_reader - INFO - Correo copiado a INBOX/blacklist_2025-10-22
+27-10-2025 14:30:24 - services.readers.mail_reader - INFO - From=10.2.0.207@apnprevent20.es 
+27-10-2025 14:30:24 - services.readers.mail_reader - DEBUG - La carpeta INBOX/Procesados_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:24 - services.readers.mail_reader - INFO - Correo copiado a INBOX/Procesados_2025-10-22
+27-10-2025 14:30:24 - services.readers.mail_reader - INFO - From=10.1.255.34@apn4prevent.es 
+27-10-2025 14:30:24 - services.readers.mail_reader - INFO - El correo de 10.1.255.34@apn4prevent.es está en la lista negra, se omite su procesamiento.
+27-10-2025 14:30:24 - services.readers.mail_reader - DEBUG - La carpeta INBOX/blacklist_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:24 - services.readers.mail_reader - INFO - Correo copiado a INBOX/blacklist_2025-10-22
+27-10-2025 14:30:25 - services.readers.mail_reader - INFO - From=10.1.254.95@apn3prevent.es 
+27-10-2025 14:30:25 - services.readers.mail_reader - INFO - El correo de 10.1.254.95@apn3prevent.es está en la lista negra, se omite su procesamiento.
+27-10-2025 14:30:25 - services.readers.mail_reader - DEBUG - La carpeta INBOX/blacklist_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:25 - services.readers.mail_reader - INFO - Correo copiado a INBOX/blacklist_2025-10-22
+27-10-2025 14:30:25 - services.readers.mail_reader - INFO - From=10.1.255.34@apn4prevent.es 
+27-10-2025 14:30:25 - services.readers.mail_reader - INFO - El correo de 10.1.255.34@apn4prevent.es está en la lista negra, se omite su procesamiento.
+27-10-2025 14:30:25 - services.readers.mail_reader - DEBUG - La carpeta INBOX/blacklist_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:25 - services.readers.mail_reader - INFO - Correo copiado a INBOX/blacklist_2025-10-22
+27-10-2025 14:30:26 - services.readers.mail_reader - INFO - From=10.1.255.34@apn4prevent.es 
+27-10-2025 14:30:26 - services.readers.mail_reader - INFO - El correo de 10.1.255.34@apn4prevent.es está en la lista negra, se omite su procesamiento.
+27-10-2025 14:30:26 - services.readers.mail_reader - DEBUG - La carpeta INBOX/blacklist_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:26 - services.readers.mail_reader - INFO - Correo copiado a INBOX/blacklist_2025-10-22
+27-10-2025 14:30:26 - services.readers.mail_reader - INFO - From=10.1.255.34@apn4prevent.es 
+27-10-2025 14:30:26 - services.readers.mail_reader - INFO - El correo de 10.1.255.34@apn4prevent.es está en la lista negra, se omite su procesamiento.
+27-10-2025 14:30:26 - services.readers.mail_reader - DEBUG - La carpeta INBOX/blacklist_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:26 - services.readers.mail_reader - INFO - Correo copiado a INBOX/blacklist_2025-10-22
+27-10-2025 14:30:26 - services.readers.mail_reader - INFO - From=10.2.0.20@apnprevent20.es 
+27-10-2025 14:30:26 - services.readers.mail_reader - DEBUG - La carpeta INBOX/Procesados_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:26 - services.readers.mail_reader - INFO - Correo copiado a INBOX/Procesados_2025-10-22
+27-10-2025 14:30:26 - services.readers.mail_reader - INFO - From=10.1.255.34@apn4prevent.es 
+27-10-2025 14:30:26 - services.readers.mail_reader - INFO - El correo de 10.1.255.34@apn4prevent.es está en la lista negra, se omite su procesamiento.
+27-10-2025 14:30:26 - services.readers.mail_reader - DEBUG - La carpeta INBOX/blacklist_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:26 - services.readers.mail_reader - INFO - Correo copiado a INBOX/blacklist_2025-10-22
+27-10-2025 14:30:27 - services.readers.mail_reader - INFO - From=10.1.252.23@apnprevent.es 
+27-10-2025 14:30:27 - services.readers.mail_reader - DEBUG - La carpeta INBOX/Procesados_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:27 - services.readers.mail_reader - INFO - Correo copiado a INBOX/Procesados_2025-10-22
+27-10-2025 14:30:27 - services.readers.mail_reader - INFO - From=10.1.255.34@apn4prevent.es 
+27-10-2025 14:30:27 - services.readers.mail_reader - INFO - El correo de 10.1.255.34@apn4prevent.es está en la lista negra, se omite su procesamiento.
+27-10-2025 14:30:27 - services.readers.mail_reader - DEBUG - La carpeta INBOX/blacklist_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:27 - services.readers.mail_reader - INFO - Correo copiado a INBOX/blacklist_2025-10-22
+27-10-2025 14:30:27 - services.readers.mail_reader - INFO - From=10.1.255.34@apn4prevent.es 
+27-10-2025 14:30:27 - services.readers.mail_reader - INFO - El correo de 10.1.255.34@apn4prevent.es está en la lista negra, se omite su procesamiento.
+27-10-2025 14:30:27 - services.readers.mail_reader - DEBUG - La carpeta INBOX/blacklist_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:27 - services.readers.mail_reader - INFO - Correo copiado a INBOX/blacklist_2025-10-22
+27-10-2025 14:30:28 - services.readers.mail_reader - INFO - From=riosegura30@backup.es 
+27-10-2025 14:30:28 - services.readers.mail_reader - DEBUG - La carpeta INBOX/Procesados_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:28 - services.readers.mail_reader - INFO - Correo copiado a INBOX/Procesados_2025-10-22
+27-10-2025 14:30:28 - services.readers.mail_reader - INFO - From=10.1.252.23@apnprevent.es 
+27-10-2025 14:30:28 - services.readers.mail_reader - DEBUG - La carpeta INBOX/Procesados_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:28 - services.readers.mail_reader - INFO - Correo copiado a INBOX/Procesados_2025-10-22
+27-10-2025 14:30:28 - services.readers.mail_reader - INFO - From=10.1.255.34@apn4prevent.es 
+27-10-2025 14:30:28 - services.readers.mail_reader - INFO - El correo de 10.1.255.34@apn4prevent.es está en la lista negra, se omite su procesamiento.
+27-10-2025 14:30:28 - services.readers.mail_reader - DEBUG - La carpeta INBOX/blacklist_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:28 - services.readers.mail_reader - INFO - Correo copiado a INBOX/blacklist_2025-10-22
+27-10-2025 14:30:28 - services.readers.mail_reader - INFO - From=10.1.255.34@apn4prevent.es 
+27-10-2025 14:30:28 - services.readers.mail_reader - INFO - El correo de 10.1.255.34@apn4prevent.es está en la lista negra, se omite su procesamiento.
+27-10-2025 14:30:28 - services.readers.mail_reader - DEBUG - La carpeta INBOX/blacklist_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:28 - services.readers.mail_reader - INFO - Correo copiado a INBOX/blacklist_2025-10-22
+27-10-2025 14:30:29 - services.readers.mail_reader - INFO - From=10.1.255.34@apn4prevent.es 
+27-10-2025 14:30:29 - services.readers.mail_reader - INFO - El correo de 10.1.255.34@apn4prevent.es está en la lista negra, se omite su procesamiento.
+27-10-2025 14:30:29 - services.readers.mail_reader - DEBUG - La carpeta INBOX/blacklist_2025-10-22 ya existe o no se pudo crear.
+27-10-2025 14:30:29 - services.readers.mail_reader - INFO - Correo copiado a INBOX/blacklist_2025-10-22
+27-10-2025 14:30:29 - services.readers.mail_reader - INFO - From=10.1.252.23@apnprevent.es 
