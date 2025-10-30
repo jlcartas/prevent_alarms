@@ -28,7 +28,7 @@ def parse_alarm(texto: str, patterns) -> dict:
             "tiempo_alarma": NOT_AVAILABLE,
             "fuente_alarma": NOT_AVAILABLE,
             "nombre_dispositivo": NOT_AVAILABLE,
-            "no_dispositivo": "0",
+            "no_dispositivo": "1",
             "num_serie": NOT_AVAILABLE,
             "ip_dispositivo": NOT_AVAILABLE,
             "tipo_eventos": NOT_AVAILABLE,

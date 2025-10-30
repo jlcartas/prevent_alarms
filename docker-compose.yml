@@ -1,0 +1,30 @@
+version: "3.9"
+
+services:
+  backend:
+    build: .
+    container_name: prevent
+	env_file: .env		
+    ports:
+      - "8000:8000"
+      - "5678:5678"  # puerto del debugger
+    volumes:
+      - ./src:/app
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/backend_db
+    depends_on:
+      - mongo
+    restart: unless-stopped
+    #command: python main.py
+
+  mongo:
+    image: mongo:6.0
+    container_name: mongo_db
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    restart: unless-stopped
+
+volumes:
+  mongo_data:

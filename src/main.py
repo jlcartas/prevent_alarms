@@ -5,7 +5,7 @@ from services.readers.mail_reader import procesar_correo_conexion_persistente
 
 logger = LoggerSingleton.get_logger("main")
 
-JOB_INTERVAL_SECONDS = 10#3600
+JOB_INTERVAL_SECONDS = 60
 _job_lock = asyncio.Lock()
 
 async def job():
@@ -14,16 +14,7 @@ async def job():
         return
     async with _job_lock:
         logger.info("Starting scheduled job (async)...")
-        try:
-            # Ejecuta la función BLOQUEANTE en un hilo (no llames a la función aquí)
-#            await asyncio.to_thread(procesar_correo_conexion_persistente,                                    
-#                                    os.getenv("MAIL_USER", "jlcartas@jlcartas.com"),
-#                                    os.getenv("MAIL_PASS", "270414"),
-#                                    os.getenv("MAIL_SERVER", "mailserver.local"),
-#                                    int(os.getenv("MAIL_PORT", "143")),
-#                                    "INBOX",  # o la carpeta que uses
-#            )
-            
+        try:            
             procesar_correo_conexion_persistente(                                    
                                     os.getenv("MAIL_USER", "tecnicovirtual@apnprevent.es"),
                                     os.getenv("MAIL_PASS", "123456"),

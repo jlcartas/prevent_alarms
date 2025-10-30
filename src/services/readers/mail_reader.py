@@ -190,7 +190,7 @@ def procesar_correo_conexion_persistente(usuario: str, clave: str, servidor: str
 # =========================
 def process_unread_messages(mail: imaplib.IMAP4):
     """Procesa todos los UNSEEN en la carpeta actual."""
-    criterio = '(UNSEEN ON 23-Oct-2025")'
+    criterio = '(UNSEEN)'# ON 27-Oct-2025")'
     status, mensajes = mail.search(None, criterio)
     if status != "OK":
         logger.warning("Could not search for unread messages")
@@ -253,7 +253,7 @@ def process_single_message(mail, message_id, blacklist, subject_list):
             datos_extraidos = get_cdata.extract_cdata(xml, cdata_data)
             if not datos_extraidos:
                 logger.warning("Sin datos de CDATA en msg %s (%s)", msg_id, asunto)
-                return                    
+                raise Exception("Sin datos de CDATA en msg %s (%s)", msg_id, asunto)                    
         else:  # si no es un xml busca en todo lo demas
 #                    raise ValueError("No es un XML, se procesa como texto plano")       
             datos_extraidos = extract_data_from_text.extract_data(body)
@@ -262,7 +262,9 @@ def process_single_message(mail, message_id, blacklist, subject_list):
         else:
             if datos_extraidos["ip_dispositivo"] == "Not available":
                 ip = get_email_from_name_dvr(datos_extraidos["nombre_dispositivo"])  
-                datos_extraidos["ip_dispositivo"] = ip                      
+                datos_extraidos["ip_dispositivo"] = ip 
+        if datos_extraidos["nombre_dispositivo"] == "LOCALHOST":
+            datos_extraidos["nombre_dispositivo"] = asunto                   
    
         alarm = set_alarms.set_doc_to_alarm(datos_extraidos)
         set_alarms_to_db.save_or_update_alarm(alarm)
@@ -353,8 +355,8 @@ def copy_message_to_date_folder(mail: imaplib.IMAP4, message_id: bytes, folder_n
     Ejemplo: INBOX/Procesados_2025-10-15
     """
     # Formar nombre de carpeta con fecha
-    #fecha_hoy = datetime.date.today().strftime("%Y-%m-%d")
-    fecha_hoy = (datetime.date.today() - datetime.timedelta(days=5)).strftime("%Y-%m-%d")
+    fecha_hoy = datetime.date.today().strftime("%Y-%m-%d")
+    #fecha_hoy = (datetime.date.today() - datetime.timedelta(days=2)).strftime("%Y-%m-%d")
     folder_name = f"{root_folder}/{folder_name}_{fecha_hoy}"
 
     # Crear carpeta si no existe

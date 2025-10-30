@@ -25,7 +25,7 @@ def save_or_update_alarm(alarm: Alarms):
                 "dvr": alarm.dvr,
                 "date": alarm.date,
                 "count_alarms": 1,   # inicializa en 1
-                "is_incident": alarm.is_incident,
+                "is_incident": True,
                 "details": [d.model_dump() for d in alarm.details]
             }},
             upsert=True
@@ -36,14 +36,30 @@ def save_or_update_alarm(alarm: Alarms):
     
     # If the alarm already existed, increment count_alarms
     if result.upserted_id is None:
-        try:
-            mongo_connection.update_one(
-                {"_id": alarm.id},
-                {"$inc": {"count_alarms": 1}}
-            )
-        except Exception as e:
-            logger.error(f"Error incrementing alarm count: {e}")
-            return None
+        filter_query = {"_id": alarm.id}
+        doc = mongo_connection.find_one(filter_query)
+        if doc.get("is_incident", False):
+            try:
+                mongo_connection.update_one(
+                    filter_query,
+                    {"$inc": {"count_alarms": 1}}
+                )
+            except Exception as e:
+                logger.error(f"Error incrementing alarm count: {e}")
+                return None
+        else:
+            try:
+                mongo_connection.update_one(
+                   filter_query,
+                {
+                    "$inc": {"count_alarms": 1},
+                    "$set": {"is_incident": True, 
+                             "date": alarm.date}
+                }
+                )
+            except Exception as e:
+                logger.error(f"Error updating alarm count, is_incident and date: {e}")
+                return None
         
         
         # Update details array if exists
