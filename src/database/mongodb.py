@@ -3,13 +3,15 @@ Created on 27 jun 2025
 
 @author: jlcartas
 """
+import os
 from pymongo import MongoClient
 from pymongo import ReturnDocument, errors
 from config import bd_settings
 from constants import constants_messages as messages
 from utils.logger import LoggerSingleton
 
-MONGO_URI = f"mongodb://{bd_settings.MONGO_HOST}:{bd_settings.MONGO_PORT}/"
+MONGO_URI = os.getenv("MONGO_URI" ,
+                      f"mongodb://{bd_settings.MONGO_HOST}:{bd_settings.MONGO_PORT}/" )
 
 logger = LoggerSingleton.get_logger(__name__)
 

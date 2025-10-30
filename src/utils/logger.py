@@ -3,7 +3,7 @@ Created on 16 jul 2025
 
 @author: jlcar
 '''
-
+import os
 import logging.config
 from pathlib import Path
 from threading import Lock
@@ -14,7 +14,7 @@ class LoggerSingleton:
     _lock = Lock()
 
     BASE_DIR = Path(__file__).resolve().parent.parent
-    LOG_DIR = BASE_DIR / "logs"
+    LOG_DIR = Path(os.getenv("LOG_DIR", "/opt/prevent/backend/logs"))
     CONFIG_PATH = BASE_DIR / "config" / "logging.conf"
 
     @classmethod

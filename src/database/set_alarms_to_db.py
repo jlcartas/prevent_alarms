@@ -3,6 +3,7 @@ Created on 23 oct 2025
 
 @author: javier
 '''
+import os
 from database import mongodb as db
 from config import bd_settings
 from utils.logger import LoggerSingleton
@@ -11,7 +12,8 @@ from models.alarms import Alarms
 def save_or_update_alarm(alarm: Alarms):
     logger = LoggerSingleton.get_logger("services.utils.get_config.set")
     
-    mongo_connection = db.MongoDBConnection(bd_settings.MONGO_DB_NAME, bd_settings.MONGO_ALARMS)
+    mongo_connection = db.MongoDBConnection(os.getenv("MONGO_DB_NAME", bd_settings.MONGO_DB_NAME), 
+                                            os.getenv("MONGO_ALARMS", bd_settings.MONGO_ALARMS) )
     
 #    alarm = alarm_data.model_dump()
     
@@ -89,17 +91,6 @@ def save_or_update_alarm(alarm: Alarms):
                         )
                 except Exception as e:
                     logger.error(f"Error adding new alarm detail: {e}")
-                    return None
-        
-            #if camera not found, add it
-            if result.matched_count == 0:
-                try:
-                    result = mongo_connection.update_one(
-                        {"_id": alarm.id},
-                        {"$push": {"details": detail.model_dump()}}
-                        )
-                except Exception as e:
-                    logger.error(f"Error adding new camera detail: {e}")
                     return None
     
     return 1

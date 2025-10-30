@@ -3,6 +3,7 @@ Created on 15 oct 2025
 
 @author: jlcartas
 '''
+import os
 from config import bd_settings
 from database import mongodb as db
 from utils.logger import LoggerSingleton
@@ -15,7 +16,9 @@ def get(query: dict):
     :param query: The subject string to search for in the MongoDB collection.
     :return: The document containing the subject if found, otherwise None.
     """
-    mongo_connection = db.MongoDBConnection(bd_settings.MONGO_DB_NAME, bd_settings.MONGO_CONFIGURATIONS)
+    mongo_connection = db.MongoDBConnection(
+        os.getenv("MONGO_DB_NAME", bd_settings.MONGO_DB_NAME), 
+        os.getenv("MONGO_CONFIGURATIONS" ,bd_settings.MONGO_CONFIGURATIONS))
     
     try:
         # Query the collection for the document with the specified subject

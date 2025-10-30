@@ -5,7 +5,7 @@ from services.readers.mail_reader import procesar_correo_conexion_persistente
 
 logger = LoggerSingleton.get_logger("main")
 
-JOB_INTERVAL_SECONDS = 60
+JOB_INTERVAL_SECONDS = os.getenv("JOB_INTERVAL_SECONDS", 60)
 _job_lock = asyncio.Lock()
 
 async def job():

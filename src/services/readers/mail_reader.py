@@ -203,8 +203,10 @@ def process_unread_messages(mail: imaplib.IMAP4):
     black_list = exception_mail.get({"_id": "exceptions_email"})
     subject_list = exception_mail.get({"_id": "exceptions_subjects"})
 
-    for num in ids:
-        process_single_message(mail, num, black_list, subject_list)
+    #reading to first 100 emails
+    ids = ids[:100]
+    for message_id in ids:
+        process_single_message(mail, message_id, black_list, subject_list)
 
 def process_single_message(mail, message_id, blacklist, subject_list):    
     """Process a single email message (robusto ante respuestas diversas de FETCH)."""
@@ -215,6 +217,7 @@ def process_single_message(mail, message_id, blacklist, subject_list):
     status, data = mail.fetch(msg_id, "(BODY.PEEK[])")
     if status != "OK" or not data:
         logger.warning("Error getting message ID %s (status=%s, data=%r)", msg_id, status, data)
+        mark_message(mail, msg_id, seen=False)
         return
 
     raw = _extract_msg_bytes(data)
@@ -225,6 +228,7 @@ def process_single_message(mail, message_id, blacklist, subject_list):
                  for p in data]
         logger.error("FETCH %s sin payload válido; partes=%s", msg_id, kinds)
         # No marcamos visto para reintentar más tarde
+        mark_message(mail, msg_id, seen=False)
         return
 
     try:
@@ -232,6 +236,7 @@ def process_single_message(mail, message_id, blacklist, subject_list):
     except Exception:
         logger.exception("Error parseando MIME en msg %s", msg_id)
         # No marcar como visto
+        mark_message(mail, msg_id, seen=False)
         return
 
     asunto = get_email_subject(mensaje)
@@ -254,8 +259,7 @@ def process_single_message(mail, message_id, blacklist, subject_list):
             if not datos_extraidos:
                 logger.warning("Sin datos de CDATA en msg %s (%s)", msg_id, asunto)
                 raise Exception("Sin datos de CDATA en msg %s (%s)", msg_id, asunto)                    
-        else:  # si no es un xml busca en todo lo demas
-#                    raise ValueError("No es un XML, se procesa como texto plano")       
+        else:  # si no es un xml busca en todo lo demas    
             datos_extraidos = extract_data_from_text.extract_data(body)
         if ip:
             datos_extraidos["ip_dispositivo"] = ip
